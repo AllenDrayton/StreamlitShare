@@ -1,12 +1,10 @@
+import joblib
+
 import streamlit as st
-import pickle
 
 # Load the model
-model_filename = 'model.pkl'
-with open(model_filename, 'rb') as model_file:
-    loaded_model = pickle.load(model_file)
+loaded_model = joblib.load('model.joblib')
 
-# Define the Streamlit app
 def main():
     st.title("Income Prediction App")
     st.write("Enter your age and years of experience to predict income.")

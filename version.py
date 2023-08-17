@@ -5,6 +5,12 @@ import pickle
 import matplotlib
 import sklearn
 import streamlit as st
+import joblib
+
+print("Joblib version:", joblib.__version__)
+
+print("Pandas version:", pd.__version__)
+
 
 print("Streamlit version:", st.__version__)
 
